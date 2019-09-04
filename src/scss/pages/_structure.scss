@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background-color: $background;
+}
+
+.navbar {
+  width: 100%;
+  height: 64px;
+  background-color: $primary-colour;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-links {
+  color: #FFF;
+  font-size: 18px;
+  font-family: $primary-font;
+  font-weight: lighter;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-decoration: none;
+
+  &.active {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  &:hover {
+    color: darkgray;
+  }
+}
