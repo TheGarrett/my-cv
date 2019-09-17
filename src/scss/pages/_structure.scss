@@ -51,6 +51,7 @@ nav a {
   height: auto;
   background-color: $secondary-colour;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
 
   &-main {
