@@ -4,21 +4,70 @@
     <meta charset="utf-8">
 
     <title>Ryan Garrett</title>
+    
+    <!-- Tab icon -->
+    <link rel="icon" href="./img/Logo2.png">
 
+    <!-- Import styles -->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
   </head>
 
   <body>
+    <!-- Introduction card WIP -->
+    <header id="introduction">
+      <h1>Protocol Portfolio</h1>
+    </header>
     <!-- Page -->
-    <div class="page">
-      <!-- Nav bar -->
-      <div class="navbar">
-        <a href="#" class="navbar-links">About Me</a>
-        <a href="#" class="navbar-links">Design Vault</a>
-        <a href="#" class="navbar-links active">Home</a>
-        <a href="#" class="navbar-links">Experience</a>
-        <a href="#" class="navbar-links">Qualifications</a>
+    <main>
+      <!-- Navbar Mobile -->
+      <nav id="mobile-nav" class="navbar">
+        <div class="navbar-main">
+          <img src="./img/Logo.png" class="navbar-logo">
+          <a class="navbar-menu display" onclick="mobileNavOpen()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <a class="navbar-menu-close hidden" onclick="mobileNavClose()">
+            <i class="fas fa-times"></i>
+          </a>
+        </div>
+        <div class="navbar-items hidden">
+          <a href="#design-vault" class="navbar-links">Design Vault</a>
+          <a href="#about-me" class="navbar-links">About Me</a>
+          <a href="#experience" class="navbar-links">Experience</a>
+          <a href="#qualifications" class="navbar-links">Qualifications</a>
+        </div>
+      </nav>
+      <!-- Navbar Desktop -->
+      <nav id="desktop-nav" class="navbar">
+        <a href="#design-vault" class="navbar-links active">Design Vault</a>
+        <a href="#about-me" class="navbar-links">About Me</a>
+        <a href="#introduction" class="navbar-links"><img src="./img/Logo.png" class="navbar-logo"></a>
+        <a href="#experience" class="navbar-links">Experience</a>
+        <a href="#qualifications" class="navbar-links">Qualifications</a>
+      </nav>
+      
+      <div class="content">
+        <section id="design-vault" class="content-sections">
+          <h1 class="content-titles">The Design Vault</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra aliquet hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed pretium enim leo. Praesent interdum magna nec enim convallis, ac commodo quam efficitur. Nulla velit felis, sagittis sed cursus et, tempus lacinia turpis. Nulla quis ante nec dolor volutpat pulvinar. Aliquam odio dolor, pellentesque in eros at, suscipit pulvinar dui. Donec vel nunc et orci pellentesque eleifend. Morbi elit magna, commodo at molestie iaculis, efficitur et ante. Vestibulum vel vestibulum purus. Nam ut dictum metus. </p>
+        </section>
+        <section id="about-me"class="content-sections">
+          <h1 class="content-titles">About Me</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra aliquet hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed pretium enim leo. Praesent interdum magna nec enim convallis, ac commodo quam efficitur. Nulla velit felis, sagittis sed cursus et, tempus lacinia turpis. Nulla quis ante nec dolor volutpat pulvinar. Aliquam odio dolor, pellentesque in eros at, suscipit pulvinar dui. Donec vel nunc et orci pellentesque eleifend. Morbi elit magna, commodo at molestie iaculis, efficitur et ante. Vestibulum vel vestibulum purus. Nam ut dictum metus. </p>
+        </section>
+        <section id="experience"class="content-sections">
+          <h1 class="content-titles">Experience</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra aliquet hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed pretium enim leo. Praesent interdum magna nec enim convallis, ac commodo quam efficitur. Nulla velit felis, sagittis sed cursus et, tempus lacinia turpis. Nulla quis ante nec dolor volutpat pulvinar. Aliquam odio dolor, pellentesque in eros at, suscipit pulvinar dui. Donec vel nunc et orci pellentesque eleifend. Morbi elit magna, commodo at molestie iaculis, efficitur et ante. Vestibulum vel vestibulum purus. Nam ut dictum metus. </p>
+        </section>
+        <section id="qualifications"class="content-sections">
+          <h1 class="content-titles">Qualifications</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra aliquet hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed pretium enim leo. Praesent interdum magna nec enim convallis, ac commodo quam efficitur. Nulla velit felis, sagittis sed cursus et, tempus lacinia turpis. Nulla quis ante nec dolor volutpat pulvinar. Aliquam odio dolor, pellentesque in eros at, suscipit pulvinar dui. Donec vel nunc et orci pellentesque eleifend. Morbi elit magna, commodo at molestie iaculis, efficitur et ante. Vestibulum vel vestibulum purus. Nam ut dictum metus. </p>
+        </section>
+        <img src="./img/Logo3.png" class="content-logo">
       </div>
-    </div>
+    </main>
+
+    <script src="./src/js/navbar.js"></script> 
   </body>
 </html>

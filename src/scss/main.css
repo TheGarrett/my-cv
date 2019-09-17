@@ -1,0 +1,148 @@
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1em;
+}
+
+body {
+  margin: 0;
+  background-color: #EDEDED;
+  font-family: "open sans";
+  scroll-behavior: smooth;
+}
+
+header, .page, body, html {
+  height: 100%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mobile-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#desktop-nav {
+  display: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a.active {
+  font-weight: bolder;
+  color: #BFBFBF;
+}
+
+nav a:hover {
+  color: #BFBFBF;
+}
+
+.navbar {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  background-color: #272727;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: 40px;
+}
+
+.navbar-menu {
+  color: #fff;
+}
+
+.navbar-items {
+  display: none;
+}
+
+.navbar-links {
+  color: #EDEDED;
+  font-size: 1.1em;
+  font-weight: lighter;
+}
+
+.content {
+  padding: 25px 20px 25px 20px;
+  color: #272727;
+  font-weight: normal;
+}
+
+.content-design-vault {
+  height: 1080px;
+}
+
+.content-about-me {
+  height: 1080px;
+}
+
+.content-experience {
+  height: 1080px;
+}
+
+.content-qualifications {
+  height: 1080px;
+}
+
+@media screen and (min-width: 900px) {
+  #mobile-nav {
+    display: none;
+  }
+  #desktop-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100px;
+    background-color: #272727;
+  }
+  .navbar-logo {
+    height: 70px;
+    width: 70px;
+  }
+  .content {
+    padding: 50px 160px 50px 160px;
+  }
+}
+
+@media screen and (min-height: 1080px) {
+  .page nav {
+    position: fixed;
+    top: 0px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

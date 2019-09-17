@@ -4,5 +4,6 @@
   },
   "scripts": {
     "scss": "node-sass --watch src/scss -o css --output-style compressed"
-  }
+  },
+  "devDependencies": {}
 }

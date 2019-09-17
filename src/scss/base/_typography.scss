@@ -1,1 +1,42 @@
-$primary-font: 'open sans'
+@import './variables';
+
+// Styles
+
+$primary-font: 'open sans';
+
+// Colour
+
+$navbar-links: $primary-colour;
+$navbar-hover: $grey;
+$navbar-active: $grey;
+
+// Mobile Size
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 1em;
+}
+
+$navbar-link-size: 1.1em;
+
+
+// Desktop Size
+
+@media screen and (min-width: $desktop) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  $navbar-link-size: 1.1em;
+}
