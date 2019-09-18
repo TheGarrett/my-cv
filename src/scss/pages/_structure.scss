@@ -62,24 +62,24 @@ nav a {
   &-logo {
     height: 40px;
     width: 40px;
+    margin-top: 4px;
   }
 
   &-menu {
     color: $primary-colour;
     position: absolute;
-    left: 15px;
+    right: 15px;
     font-size: 1.5em;
 
     &-close {
       color: $primary-colour;
       position: absolute;
-      left: 15px;
+      right: 15px;
       font-size: 1.5em;
     }
   }
 
   &-items {
-    // display: none;
     background-color: $dark-grey;
     height: auto;
     display: none;
@@ -125,10 +125,11 @@ nav a {
     margin: 0 auto;
   }
   &-logo {
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     display: flex;
     margin: 0 auto;
+    padding-bottom: 15px;
   }
 }
 
@@ -155,6 +156,7 @@ nav a {
     &-logo {
       height: 70px;
       width: 70px;
+      margin-top: 0;
     }
 
     &-links {
@@ -179,6 +181,8 @@ nav a {
     }
 
     &-logo {
+      height: 70px;
+      width: 70px;
       margin-bottom: 20px;
     }
   }
