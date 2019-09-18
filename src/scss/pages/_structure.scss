@@ -6,6 +6,8 @@ body {
   margin: 0;
   background-color: $primary-colour;
   font-family: $primary-font;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 // Set intro page height to screen resolution WIP
@@ -19,10 +21,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-section {
-  padding-top: 55px;
 }
 
 nav a {
@@ -119,7 +117,8 @@ nav a {
   &-sections {
     display: flex;
     flex-direction: column;
-    height: 1080px;
+    height: auto;
+    padding-top: 55px;
   }
   &-titles {
     display: flex;
@@ -133,14 +132,9 @@ nav a {
   }
 }
 
-
 // Desktop View
 
 @media screen and (min-width: $desktop) {
-
-  section {
-    padding-top: 120px;
-  }
 
   #mobile-nav {
     display: none;
@@ -176,11 +170,16 @@ nav a {
     &-sections {
       display: flex;
       flex-direction: column;
-      height: 1080px;
+      padding-top: 120px;
     }
+
     &-titles {
       display: flex;
       margin: 0 auto;
+    }
+
+    &-logo {
+      margin-bottom: 20px;
     }
   }
 }
