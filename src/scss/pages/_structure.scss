@@ -50,8 +50,8 @@ nav a {
   flex-direction: column;
   height: auto;
   background-color: $secondary-colour;
-  position: sticky;
   position: -webkit-sticky;
+  position: sticky;
   top: 0;
 
   &-main {
