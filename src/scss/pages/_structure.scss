@@ -27,11 +27,11 @@ nav a {
   text-decoration: none;
 
   &.active {
-    color: $red;
+    color: $orange;
   }
 
   &:hover {
-    color: $red;
+    color: $orange;
   }
 }
 
@@ -63,8 +63,8 @@ nav a {
     height: 40px;
     width: 40px;
     margin-top: 4px;
-    -webkit-filter: drop-shadow(0 0 10px $red);
-    filter: drop-shadow(0 0 3mm $red);
+    -webkit-filter: drop-shadow(0 0 2mm $white);
+    filter: drop-shadow(0 0 2mm $white);
   }
 
   &-menu {
@@ -159,6 +159,8 @@ nav a {
       height: 70px;
       width: 70px;
       margin-top: 0;
+      -webkit-filter: drop-shadow(0 0 3mm $orange);
+      filter: drop-shadow(0 0 3mm $orange);
     }
 
     &-links {
