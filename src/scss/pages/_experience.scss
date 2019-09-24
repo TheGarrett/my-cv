@@ -1,0 +1,125 @@
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+// Layout
+.row {
+  display:flex;
+  width: 100%;
+  margin-top: 20px;
+  .col {
+    flex:1;
+  }
+}
+
+/* Accordion */
+.tabs {
+  overflow: hidden;
+}
+.tab {
+  width: 100%;
+  color: $secondary-colour;
+  overflow: hidden;
+
+  &-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid $secondary-colour;
+    cursor: pointer;
+
+    &:hover {
+      background: darken($primary-colour, 10%);
+    }
+    &::after {
+      content: "\276F";
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      transition: all .35s;
+    }
+  }
+
+  &-content {
+    max-height: 0;
+    padding: 0 1em;
+    font-size: 1em;
+    transition: all .35s;
+  }
+
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: $primary-colour;
+    cursor: pointer;
+
+    &:hover {
+      background: darken($primary-colour, 10%);
+    }
+  }
+}
+
+// :checked
+input:checked {
+  + .tab-label {
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+  ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
+  }
+}
+
+.experience {
+
+  &-intro {
+    margin: 0 auto;
+  }
+
+  &-table {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  &-date {
+    position: absolute;
+    margin-left: 115px;
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 2px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  // Layout
+  .row {
+    margin-top: 50px;
+  }
+  
+  /* Accordion */
+  .tab {
+    &-label {
+      font-size: 25px;
+    }
+  }
+  
+  .experience {
+    &-table {
+      margin-top: 50px;
+    }
+  
+    &-date {
+      margin-left: 145px;
+      font-size: 18px;
+      margin-top: 5px;
+    }
+  }
+}

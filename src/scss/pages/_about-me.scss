@@ -1,0 +1,52 @@
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+  &-image {
+    height: 200px;
+    border-radius: 200px;
+  }
+
+  &-name {
+    margin-bottom: 5px;
+  }
+
+  &-job {
+    margin-top: 0;
+  }
+
+  &-interests {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    &-icon {
+      font-size: 3em;
+      color: $house-colour;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .about-me {
+    margin-top: 50px;
+  
+    &-interests {
+      &-icon {
+        font-size: 4em;
+      }
+    }
+  }
+}

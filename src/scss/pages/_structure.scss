@@ -27,11 +27,11 @@ nav a {
   text-decoration: none;
 
   &.active {
-    color: $orange;
+    color: $house-colour;
   }
 
   &:hover {
-    color: $orange;
+    color: $house-colour;
   }
 }
 
@@ -159,8 +159,8 @@ nav a {
       height: 70px;
       width: 70px;
       margin-top: 0;
-      -webkit-filter: drop-shadow(0 0 3mm $orange);
-      filter: drop-shadow(0 0 3mm $orange);
+      -webkit-filter: drop-shadow(0 0 3mm $house-colour);
+      filter: drop-shadow(0 0 3mm $house-colour);
     }
 
     &-links {
@@ -171,7 +171,7 @@ nav a {
   }
 
   .content {
-    padding: 0 50px 50px 50px;
+    padding: 0 160px 50px 160px;
 
     &-sections {
       display: flex;

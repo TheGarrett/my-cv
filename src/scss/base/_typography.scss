@@ -17,14 +17,26 @@ $navbar-active: $grey;
 
 h1 {
   font-size: 1.8em;
+  letter-spacing: 1px;
 }
 
 h2 {
   font-size: 1em;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 1.2em;
 }
 
 p {
   font-size: 1em;
+  letter-spacing: 1px;
+
+  &.sub-title {
+    font-weight: bold;
+    font-style: italic;
+  }
 }
 
 $navbar-link-size: 1.1em;
@@ -34,7 +46,7 @@ $navbar-link-size: 1.1em;
 
 @media screen and (min-width: $desktop) {
   h1 {
-    font-size: 2em;
+    font-size: 3em;
   }
 
   h2 {
